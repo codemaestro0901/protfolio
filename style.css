@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;  
+    scroll-behavior: smooth;
+}
+
+/* navbar css start  */
+.navbar{
+    margin-top: 10px;
+    padding: 12px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* background: red;  */
+}
+.nav1{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.nav1 i{
+    font-size: 25px;
+}
+.nav2{
+    display: flex;
+    gap: 80px;
+    font-size: 19px;   
+}
+.nav2 a{
+    text-decoration: none;
+    color: #253f3f;
+
+}
+/* navbar css end */
+
+/* welcome css start  */
+.wlcmsection{
+   width: 100%;
+   height: 82vh;
+   display: flex; 
+   justify-content: space-around;  
+   gap: 20px;  
+   
+} 
+.wlcmtxt{
+    width: 45%;
+    padding: 50px 2px; 
+    margin-left: 50px;   
+}
+.hlo{
+   font-size: 48px;
+   font-style: italic;
+   font-weight: bold;
+   -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+.wlcmtxt p{
+    padding: 10px; 
+    color: #253f3f;
+    font-size: 22px;
+    text-align: left;
+    line-height: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wlcmtxt p span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.social{
+    width: 100%;
+   /* background-color: red; */
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    
+}
+.s_icon{
+    height: 60px;
+    width: 60px;
+   /*background-color:black; */
+    border: 1px dotted;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.s_icon i{
+    font-size: 35px;
+}
+.s_icon:hover{
+    background-color:rgb(19, 18, 18);
+    color: #cfc4b5;
+    transition: all 0.8s ease;
+}
+.s_icon:hover i{
+    font-size: 45px;
+}
+.wlcimg{
+      width: 45%;
+      /* padding: 20px;  */
+}
+.imgbox{
+    margin-left: 50px;
+    height: 450px;
+    width: 450px;
+    background-color: aqua;
+    padding: 10px 35px;
+    border-radius: 63% 37% 67% 33% / 40% 25% 75% 60% ;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 63% 37% 67% 33% / 40% 25% 75% 60% ;
+}
+
+/* welcome css end  */
+
+/* about css start  */
+.aboutsection{
+    width: 100%;
+    height: 102vh;
+    background: #292727;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about h1{
+    color: #b2cee6;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.aboutcnt{
+    padding: 15px;
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    color: #cec9f7; 
+}
+.aboutcnt h2{
+    font-family: Apple Chancery, cursive;
+}
+.abimg{
+ height: 275px;
+ width: 275px;
+ align-content: center;
+ margin-bottom: 15px;
+
+}
+.aboutcnt img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px dotted #cec9f7;
+    border-radius: 50%;  
+}
+.aboutcnt p{
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive; 
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* about css end  */
+
+
+/* education css start  */
+.studyinfo{
+    height: 100vh;
+    background: #dfc5c5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.studyinfo h1{
+    color: #042038;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.education{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+.educationtxt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* align-items: center;  */
+    margin-left: 90px;
+}
+.edutxt1{
+    background: #b4c4d1;
+    width: 550px;
+    height: 55px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #011b33;
+}
+.edutxt1 h3{
+    color: #011b33;
+    font-size: 20px;
+    padding: 5px;
+}
+.edutxt2{
+    text-align: left; 
+    
+}
+.edutxt2 h2{
+    color: #011b33;
+    font-size: 20px;
+    padding: 5px;
+}
+.edutxt3 h3{
+    color: #011b33;
+    font-size: 20px;
+    padding: 5px;
+}
+.educationimg{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.educationimg h3{
+    color: #011e3a;
+    font-size: 20px;
+    padding: 5px;
+    font-family: FreeMono, monospace;
+}
+.educimg img{
+    height: 85%;
+    width: 85%;
+    object-fit: contain;
+}
+
+/* education css end  */
+
+
+/* skills css start  */
+
+.skills{
+    width: 100%;
+    height: 100vh;
+    background: #292727;
+    text-align: center;
+}
+
+.card-wrapper{
+    padding: 35px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card{
+    border: 2px solid #b2cee6 ;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.card:hover{
+    background: #b2cee6;
+    color:  #292727;
+    transition: all 0.5s ease;
+}
+.card i {
+    font-size: 80px;
+}
+.card h3 {
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* eslills css end  */
+
+/* project css start  */
+
+.project{
+    width: 100%;
+    background:#dfc5c5;
+    text-align: center;
+    color: #042038;
+}
+.project h1{
+    color: #042038;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.project-wrapper{
+    width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+}
+.prmain{
+    height: 50vh;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    overflow: hidden;
+}
+.project-img{
+    height: 80%;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000;
+}
+.project-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.project-text{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.project-text h2{
+    font-size: 50px;
+ } 
+.project-text h3{
+    font-size: 30px;
+    
+ }
+ .project-text p{
+    font-size: 16px; 
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 20px;
+
+  }
+
+/* project css end  */
+
+/* contact css start  */
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: #292727;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+}
+.contact h1{
+    color:  #dfc5c5;;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contactbox{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 70px;  
+} 
+.form{
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form input,textarea{
+    margin-left: 150px;
+    width: 350px;
+    height: 50px;
+    background: none;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #b2cee6;
+    font-family: Comic Sans MS, Comic Sans, cursive; 
+    box-shadow: -3px -2px 4px #b2cee6;
+
+}
+.form textarea{
+    height: 90px !important;
+    font-size: 22px !important;
+}
+.tq{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #b1bfca;
+}
+.tq h2{
+    font-size: 35px;
+    padding: 5px;
+}
+.tq p{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    color: #818b94;
+    font-style: italic;  
+}
+.cncticon{
+display: flex;
+gap: 20px;
+padding: 10px;
+}
+.cncticon i{
+    font-size: 25px;
+}
+.footer{
+    margin-top: 55px;
+    height: 8vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Snell Roundhand, cursive;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    align-items: center;
+    background: #131111;
+}
+
+
+
+
+
+/* contact css end  */
